@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Page details and CSS. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Logan Weather App</title>
+</head>
+
+<body>
+
+    <!-- Title Bar. -->
+    <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+        <h4 class="title-text text-center">Logan McCann</h4>
+    </nav>
+    <!-- Page title and switch to change unit of measurement. -->
+    <div class="container">
+        <div class="row title">
+            <div class="col-md-12 pageHeader">
+                <h1>Local Weather</h1>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- Search box and search button. -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6>Search for a city:</h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="(ex. Chicago)"
+                                aria-label="City weather search" aria-describedby="button-addon2" id="searchWeather">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="search"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Div to place search history. -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-group history">
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Jumbotron to show current weather and footer where future weather cards are placed. -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="jumbotron">
+                            <h1 class="display-4 city"></h1>
+                            <p class="lead temp"></p>
+                            <p class="lead humid"></p>
+                            <p class="lead wind"></p>
+                            <p class="lead uv"></p>
+                            <hr class="my-4">
+                            <div class="row future">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer. -->
+    <footer class="myFooter text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="footer-text">@Copyright</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts. -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets//index.js"></script>
+</body>
+
+</html>

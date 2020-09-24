@@ -1,0 +1,120 @@
+/* standardizing font */
+*{
+    font-family: "Open Sans", Helvetica, sans-serif; 
+}
+
+/* padding for bottom of page to show over fixed footer */
+body {
+  padding-bottom: 80px;
+}
+.navbar{
+    background-color: hsl(241, 28%, 53%);
+}
+.title-text{
+    justify-content: center;
+    color: white;
+}
+/* page title row */
+.title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    
+}
+.line{
+    border: solid black 1px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 5%;
+}
+/* Page title formatting */
+.pageHeader{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    background-color: hsl(241, 28%, 53%) ;
+}
+/* Unit measure switch formatting is next 9 formatting sections*/
+#degreeText{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+  }
+
+  #degreeText{
+      text-align: right;
+  }
+
+/* fomratting for history of searches */
+.history{
+    width: 100%;
+    
+}
+.his{
+    color: hsl(241, 28%, 53%);
+}
+/* Jumbotron formating for current and future weather */
+.jumbotron{
+    padding-top: 0;
+    background-color: white;
+}
+
+/* Next four sections format UV Index with conditional formatting */
+.uvLabel{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;    
+}
+
+.safe{
+    background-color: green;
+}
+
+.moderate{
+    background-color: orange;
+}
+
+.danger{
+    background-color: red;
+}
+
+/* Next four sections format the future weather cards*/
+.card{
+    margin: 10px auto;
+}
+
+.card-header{
+    background-color: hsl(241, 28%, 53%);
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.card-body{
+    padding-top: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.futureImg{
+    height: 50px;
+    width: 50px;
+}
+
+/* styleing footer */
+.myFooter{
+    font-family: "Open Sans", Helvetica, sans-serif;
+    background-color: hsl(241, 28%, 53%);
+    padding-top: 5px;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+.footer-text{
+    color:white;
+}
